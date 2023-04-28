@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( 
+            115deg,
+         rgba(0, 174, 107, 0.8),
+         rgba(207, 224, 216, 0.7) ),
+            url("https://contentstatic.techgig.com/photo/88621053/top-coding-job-titles-that-programmers-can-apply-for-in-2022.jpg?659439");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    line-height: 1.4;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* Header */
+
+#header {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#header * {
+    text-align: center;
+    
+}
+
+#header h1 {
+    font-size: 2em;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+}
+
+#header p {
+    font-style: italic;
+    text-shadow: 1.5px 1.5px 1.5px rgb(0 0 0 / 60%);
+
+    margin-top: 10px;
+}
+
+/* Form */
+
+#survey-form {
+    padding: 2rem 2.5rem;
+    border-radius: 5px;
+    background-color: rgba(19, 92, 112, 0.85);
+    width: 600px;
+    height: 80%;
+    margin: 0 auto;
+}
+
+#survey-form label {
+    display: flex;
+    align-items: center;
+    font-size: 1.225rem;
+    margin-bottom: 0.5rem;
+}
+
+#survey-form .form-section, #user-data div {
+    margin-bottom: 32px;
+}
+
+/* first section (name, email, age) 
++ general inputs (section 3 and 5)  */
+
+#user-data {
+    margin-top: 10px;
+}
+
+#user-data input, #favorite-feature-section select,
+#suggestions-section textarea, #submit {
+    width: 100%;
+    height: 2.3rem;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+}
+
+/* second section (reccomend to a friend) 
++ fourth section (what to improve) */
+
+#reccomend-section input, #what-to-improve-section input  {
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+/* third section (favorite feature) */
+
+#favorite-feature-section select {
+   color: gray;
+}
+
+/* fifth part (suggestions) */
+
+#suggestions-section textarea{
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+}
+
+/* submit button */
+
+#submit {
+    height: 3rem;
+    background-color: rgb(72, 177, 233);
+    color: white;
+    font-size: 1.125rem;
+    letter-spacing: 0.04em;
+    
+}
+
+/* max-width */
+
+@media only screen and (max-width: 500px) {
+    header, #survey-form {
+        width: 400px;
+        
+    }
+}
