@@ -8,24 +8,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   
+   <!-- Header -->
     <header id="header">
         <h1 id="title">FreeCodeCamp Survey Form</h1>
         <p id="description">Thank you for taking the time to help us improve the platform</p>
         <p>(in the fCC preview the background css doesn't work correctly, but in the browsers works)</p>
     </header>
-
-
-
+    
+    <!-- Form -->
     <form action="data-management.php" id="survey-form">
     
+    <!-- User Data -->
     <section class="form-section" id="user-data">
-        
         <div id="name-field">
             <label id="name-label" for="name">Name</label>
                 <input type="text" name="name-input" id="name" required
                 placeholder="Enter your name">
-            
         </div>
     
 
@@ -41,9 +39,9 @@
                 <input type="number" name="number-input" id="number"
                 pattern="\d*" min=0 max=100 placeholder=11>
         </div>
-
     </section>
 
+    <!-- User Reccomend -->
     <section class="form-section" id="reccomend-section">
         <label>Would you recommend freeCodeCamp to a friend?</label>
         <label>
@@ -62,7 +60,7 @@
         </label>
     </section>
     
-
+    <!-- Favorite Feature -->
     <section class="form-section" id="favorite-feature-section">
         <label for="dropdown">What is your favorite feature of freeCodeCamp?</label>
             <select name="dropdown" id="dropdown">
@@ -72,9 +70,9 @@
                 <option value="3">Community</option>
                 <option value="4">Open Source</option>
             </select>
-        
     </section>
 
+    <!-- What to Improve -->
     <section class="form-section" id="what-to-improve-section">
         <label>What would you like to see improved? (Check all that apply)</label>
 
@@ -132,20 +130,18 @@
             <input type="checkbox" name="prefer" value="additional-courses">
              Additional Courses
         </label>
-
     </section>
 
+     <!-- Additional Comments -->
     <section class="form-section" id="suggestions-section">
         <label for="additional-comments">Any comments or suggestions?</label>
             <textarea name="additional-comments" id="" cols="30" rows="10" 
             placeholder="Enter your comment here..."></textarea>
-        
     </section>
 
+    <!-- Submit -->
     <input type="submit" value="Submit" id="submit">
-
     </form>
-
 
 </body>
 </html>
